@@ -45,6 +45,8 @@ wget https://github.com/innovation-gateway/httpd-saml/blob/master/saml-metadata/
 
 ```bash
 wget https://github.com/innovation-gateway/httpd-saml/blob/master/httpd/capability.conf
+
+mv capabiliy.conf /etc/httpd/conf.d/
 ```
 
 Edit the conf file where needed:
