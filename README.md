@@ -12,9 +12,11 @@ chkconfig --levels 235 httpd on
 service httpd restart
 ```
 
-## Install Mod_Auth_Mellon
+## Install Mod_Auth_Mellon on Red Hat, CentOS, and/or Amazon Linux
 
-### If using Amazon Linux
+### Amazon Linux
+
+Before installing mod_auth_mellon you must first install these dependencies
 
 ```bash
 wget ftp://fr2.rpmfind.net/linux/centos/6.6/os/x86_64/Packages/lasso-2.4.0-5.el6.x86_64.rpm
