@@ -1,4 +1,6 @@
-# Using Apache httpd with mod_auth_mellon to deal with SSL and SAML and then proxy requests to your Application server.
+# Apache httpd saml
+
+Using Apache httpd with mod_auth_mellon (https://github.com/UNINETT/mod_auth_mellon) to deal with SSL and SAML and then proxy requests to your Application server.
 
 ## Installing Apache httpd
 
