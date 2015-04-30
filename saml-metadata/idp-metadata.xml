@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityDescriptor entityID="https://idp.igw.us:443/openam" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+    <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDkzCCAnugAwIBAgIBCTANBgkqhkiG9w0BAQsFADA7MRMwEQYDVQQKEwpJR1cgRG9tYWluMQ8w
+DQYDVQQLEwZwa2ktY2ExEzARBgNVBAMTCkdhdGV3YXkgQ0EwHhcNMTUwMjI2MDI0MDE0WhcNMTcw
+MjE1MDI0MDE0WjBJMQswCQYDVQQGEwJVUzETMBEGA1UECBMKU29tZS1TdGF0ZTEQMA4GA1UEChMH
+R2F0ZXdheTETMBEGA1UEAxMKaWRwLmlndy51czCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBALtTYw1Lch/EEaC2dQWWuQEQyPoo1/ZkgPjc9mNMp/nVUE3ME3mlJBp0IC3ULUDz1J8lHx5u
+NL4H6nrsKGwKxlVJ2ZkMAeGDboy3Eww+wjsCyPkzjtgtTW09WJ3bOE+IvSuD5PGTMw1DJFRuw2Ww
+pi04Pw69pQBi8FJ1TWkEPBGOTaYkVyUGbev/7p6xEezlpTTDodC5nNJP/va6Di6h3v8sK3Lvm9o2
+M6s50+qbfNJN8KxXkhVh2Ix+ZMILv/SO2lOKMWQRhjC/8G2BFGRbr+jZuugenMGvRIDD+hyEkTtO
+7cujmRyKZHRrR6Eh3zYYe47m7F/iPrrIUyt3jCQS6JkCAwEAAaOBkzCBkDAfBgNVHSMEGDAWgBQd
+Ei1aBgvDczofCxXp4f1DKadnTDA+BggrBgEFBQcBAQQyMDAwLgYIKwYBBQUHMAGGImh0dHA6Ly9w
+a2lyb290Lmlndy51czo5MTgwL2NhL29jc3AwDgYDVR0PAQH/BAQDAgTwMB0GA1UdJQQWMBQGCCsG
+AQUFBwMBBggrBgEFBQcDAjANBgkqhkiG9w0BAQsFAAOCAQEAAksqfHa06Uy5gY1UrCsurFy38uKT
+T3Yg2gSfSBPW6w3lH+9naWab7k8StTba4bIjqTq7D9Nsmu/R/dnTlw7Gvg/6NEXMPZjL2SMKU8Fn
+qe915jraJd2pDmNVgEggYGMkjWtZNih05E15u6mwnB5szqtA55Q4WkwGqUC5TCzsC3YHzBhrUjvB
+5yIZ5CzElGul/zlmMUAV4wcVgK20+grE3xv8mUDn0A5wzM3tmiRhipnASAMaaHP6p+8a3hU5Isfm
+Rf7y9BtFK2W2w2jacvkC60pNE9WanQUa2jTq2i102GgV+5lWVR6Gp8i2LV1VHQnxKw4BRb/d3HKJ
+R1eyM8Fqyg==
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <ArtifactResolutionService index="0" isDefault="false" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.igw.us:443/openam/ArtifactResolver/metaAlias/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.igw.us:443/openam/IDPSloRedirect/metaAlias/idp" ResponseLocation="https://idp.igw.us:443/openam/IDPSloRedirect/metaAlias/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.igw.us:443/openam/IDPSloPOST/metaAlias/idp" ResponseLocation="https://idp.igw.us:443/openam/IDPSloPOST/metaAlias/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.igw.us:443/openam/IDPSloSoap/metaAlias/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.igw.us:443/openam/IDPMniRedirect/metaAlias/idp" ResponseLocation="https://idp.igw.us:443/openam/IDPMniRedirect/metaAlias/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.igw.us:443/openam/IDPMniPOST/metaAlias/idp" ResponseLocation="https://idp.igw.us:443/openam/IDPMniPOST/metaAlias/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.igw.us:443/openam/IDPMniSoap/metaAlias/idp"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.igw.us:443/openam/SSORedirect/metaAlias/idp"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.igw.us:443/openam/SSOPOST/metaAlias/idp"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.igw.us:443/openam/SSOSoap/metaAlias/idp"/>
+        <NameIDMappingService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.igw.us:443/openam/NIMSoap/metaAlias/idp"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.igw.us:443/openam/AIDReqSoap/IDPRole/metaAlias/idp"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:URI" Location="https://idp.igw.us:443/openam/AIDReqUri/IDPRole/metaAlias/idp"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
