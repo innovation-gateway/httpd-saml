@@ -49,11 +49,11 @@ wget https://github.com/innovation-gateway/httpd-saml/blob/master/httpd/capabili
 
 Edit the conf file where needed:
 
-1) `ServerName` must be edited to reflect your capability endpoint's URL
-2) `SSLCertificateFile` and `SSLCertificateKeyFile` should be edited if you either stored the files in a different place or named them differently
-3) `MellonSPPrivateKeyFile` and `MellonSPCertFile` should have the same values as above
-4) `ProxyPass` and `ProxyPassReverse` should be edited to reflect what the upstream server's port is
-5) `MellonCond "isMemberOf"` can be edited to use a different role
+1. `ServerName` must be edited to reflect your capability endpoint's URL
+2. `SSLCertificateFile` and `SSLCertificateKeyFile` should be edited if you either stored the files in a different place or named them differently
+3. `MellonSPPrivateKeyFile` and `MellonSPCertFile` should have the same values as above
+4. `ProxyPass` and `ProxyPassReverse` should be edited to reflect what the upstream server's port is
+5. `MellonCond "isMemberOf"` can be edited to use a different role
 
 ## Download sp-metadata.xml 
 
