@@ -63,7 +63,7 @@ Instuctions pending
 
 ## Copy certificates
 
-Copy mycapability.crt and mycapability.key to the location
+Copy mycapability.crt and mycapability.key to the location supplied in the conf file
 
 ## Restart httpd
 
