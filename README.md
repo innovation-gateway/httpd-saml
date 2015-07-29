@@ -19,9 +19,9 @@ service httpd restart
 Before installing mod_auth_mellon you must first install these dependencies
 
 ```bash
-wget https://github.com/innovation-gateway/httpd-saml/blob/master/amazon-linux/lasso-2.4.1-5.el7.x86_64.rpm
-wget https://github.com/innovation-gateway/httpd-saml/blob/master/amazon-linux/xmlsec1-1.2.9-8.1.x86_64.rpm
-wget https://github.com/innovation-gateway/httpd-saml/blob/master/amazon-linux/xmlsec1-openssl-1.2.9-8.1.x86_64.rpm
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/lasso-2.4.1-5.el7.x86_64.rpm
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/xmlsec1-1.2.9-8.1.x86_64.rpm
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/xmlsec1-openssl-1.2.9-8.1.x86_64.rpm
 
 yum localinstall xmlsec1-*
 yum localinstall lasso-2.4.0-5.el6.x86_64.rpm
@@ -30,7 +30,7 @@ yum localinstall lasso-2.4.0-5.el6.x86_64.rpm
 ### mod_auth_mellon
 
 ```bash
-wget https://github.com/innovation-gateway/httpd-saml/blob/master/mod_auth_mellon/mod_auth_mellon-0.10.0-1.el6.x86_64.rpm
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/mod_auth_mellon/mod_auth_mellon-0.10.0-1.el6.x86_64.rpm
 
 yum localinstall mod_auth_mellon-0.10.0-1.el6.x86_64.rpm
 ```
@@ -38,13 +38,13 @@ yum localinstall mod_auth_mellon-0.10.0-1.el6.x86_64.rpm
 ### additional files
 
 ```bash
-wget https://github.com/innovation-gateway/httpd-saml/blob/master/saml-metadata/idp-metadata.xml
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/saml-metadata/idp-metadata.xml
 ```
 
 ## Configure httpd for SAML
 
 ```bash
-wget https://github.com/innovation-gateway/httpd-saml/blob/master/httpd/capability.conf
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/httpd/capability.conf
 
 mv capabiliy.conf /etc/httpd/conf.d/
 ```
