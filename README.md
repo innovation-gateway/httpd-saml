@@ -20,8 +20,8 @@ Before installing mod_auth_mellon you must first install these dependencies
 
 ```bash
 wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/lasso-2.4.1-5.el7.x86_64.rpm
-wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/xmlsec1-1.2.9-8.1.x86_64.rpm
-wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/xmlsec1-openssl-1.2.9-8.1.x86_64.rpm
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/xmlsec1-1.2.20-5.el7.x86_64.rpm
+wget https://github.com/innovation-gateway/httpd-saml/raw/master/amazon-linux/xmlsec1-openssl-1.2.20-5.el7.x86_64.rpm
 
 yum localinstall xmlsec1-*
 yum localinstall lasso-2.4.0-5.el6.x86_64.rpm
