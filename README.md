@@ -35,6 +35,14 @@ wget https://github.com/innovation-gateway/httpd-saml/raw/master/mod_auth_mellon
 yum localinstall mod_auth_mellon-0.10.0-1.el6.x86_64.rpm
 ```
 
+## Unbuntu
+
+sudo apt=get install apache2
+sudo apt-get install openssl liblasso3
+sudo apt-get install libapache2-mod-auth-mellon
+
+NOTE: If you later run into problems getting authentication to work, ensure that the version of mod_auth_mellon that installed is >=0.10. If it is not, upgrade now. Running an older version, such as 0.7 will cause problems when we update the config file.
+
 ### additional files
 
 ```bash
